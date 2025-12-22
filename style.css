@@ -206,29 +206,101 @@ footer {
 
 /* ===== DARK MODE ===== */
 body.dark {
-  background: #2b2b2b;
+  background: #2b2b2b; /* fond principal */
+  color: #f5f0e6;      /* texte principal clair */
+}
+
+/* Header */
+body.dark .main-header {
+  background: #1f1f1f; /* gris très sombre */
+  color: #f5f0e6;      /* texte clair */
+}
+
+/* Footer */
+body.dark footer {
+  background: #1f1f1f; /* même gris sombre que header */
   color: #f5f0e6;
 }
 
-body.dark .main-header,
-body.dark footer {
-  background: #a1866f;
+/* Canvas */
+body.dark #bgCanvas {
+  background: #000; /* noir profond */
 }
 
+/* Cartes (experience / projets) */
 body.dark .experience-card,
 body.dark .project-card {
-  background: #3c3c3c;
+  background: #2e2e2e; /* gris foncé légèrement plus clair que le header */
   box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  color: #f5f0e6;
 }
 
-body.dark .skills span {
-  background: #c19a6b;
-  color: #fff;
+/* Titres dans cartes */
+body.dark .exp-content h3,
+body.dark .proj-content h3 {
+  color: #c19a6b; /* accent doré doux */
 }
 
+/* Boutons principaux */
 body.dark .btn {
-  background: #c19a6b;
+  background: #c19a6b; /* accent doré */
+  color: #1f1f1f;      /* texte sombre pour contraste */
 }
+
+body.dark .btn:hover {
+  background: #e0c097; /* survol légèrement plus clair */
+   color: #1f1f1f;  
+}
+
+/* Boutons secondaires */
+body.dark .btn.secondary {
+  background: #5c4a32; /* brun foncé discret */
+  color: #f5f0e6;
+}
+
+body.dark .btn.secondary:hover {
+  background: #7a6547; /* survol plus clair */
+}
+
+/* Skills */
+body.dark .skills span {
+  background: #5c4a32; /* brun foncé compatible */
+  color: #f5f0e6;
+}
+
+/* Liens “View Project Details” et “Contact” (dans le header/actions ou ailleurs) */
+body.dark .header-actions a,
+body.dark .project-description a {
+  color: #c19a6b;       /* accent doré */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+body.dark .header-actions a:hover,
+body.dark .project-description a:hover {
+  color: #e0c097;       /* survol plus clair */
+}
+/* Bouton Download CV en mode dark harmonisé avec Dark Mode */
+body.dark .btn.download {
+  background: #5c4a32;   /* même brun foncé que le bouton Dark Mode */
+  color: #f5f0e6;        /* texte clair identique */
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+body.dark .btn.download:hover {
+  background: #7a6547;   /* survol plus clair, même que Dark Mode */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+
 /* ===== VIDEO ACOUSTICO ===== */
 .project-video {
   width: 75%;          /* 🔽 réduit légèrement la taille */
