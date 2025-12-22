@@ -296,6 +296,7 @@ body.dark .btn.download {
 
 body.dark .btn.download:hover {
   background: #7a6547;   /* survol plus clair, même que Dark Mode */
+  color: #f5f0e6;        /* texte clair identique */
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
@@ -328,3 +329,4 @@ body.dark .btn.download:hover {
   color: #c19a6b;
   font-weight: bold;
 }
+
