@@ -344,12 +344,13 @@ body.dark .btn.download:hover {
 }
 .project-image2 {
   width: 100%;          /* réduit la largeur à 50% de la taille originale */
-  max-width: 1200px;    /* limite la largeur maximale */
+  max-width: 800px;    /* limite la largeur maximale */
   height: auto;        /* garde les proportions */
   display: block;
   margin: 0 auto;      /* centre l'image horizontalement */
   border-radius: 12px; /* coins arrondis */
 }
+
 
 
 
