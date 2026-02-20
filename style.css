@@ -329,4 +329,27 @@ body.dark .btn.download:hover {
   color: #c19a6b;
   font-weight: bold;
 }
+.project-image {
+  width: 50%;          /* réduit la largeur à 50% de la taille originale */
+  max-width: 400px;    /* limite la largeur maximale */
+  height: auto;        /* garde les proportions */
+  display: block;
+  margin: 0 auto;      /* centre l'image horizontalement */
+  border-radius: 12px; /* coins arrondis */
+}
+
+.project-description ul {
+  margin-left: 25px;   /* décale la liste vers la droite */
+  list-style: none;    /* enlève les puces */
+}
+.project-image2 {
+  width: 100%;          /* réduit la largeur à 50% de la taille originale */
+  max-width: 400px;    /* limite la largeur maximale */
+  height: auto;        /* garde les proportions */
+  display: block;
+  margin: 0 auto;      /* centre l'image horizontalement */
+  border-radius: 12px; /* coins arrondis */
+}
+
+
 
